@@ -142,21 +142,53 @@ ul {
     text-align: center;
 }
 
-/* Botón de sortear título */
-.button-draw {
+.button-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
+    max-width: 300px;
+    gap: 15px; 
 }
 
-.button-draw img {
-    margin-right: 40px;
+.button-draw,
+.button-reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.button-draw {
+    background-color: var(--color-button);
+    color: var(--color-white);
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+.button-reset {
+    background-color: #1744da; 
+    color: var(--color-white);
+}
+
+.button-reset:hover {
+    background-color: #1744da;  
+}
+
+.button-draw img,
+.button-reset img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
