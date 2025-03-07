@@ -41,3 +41,9 @@ function sortearAmigo() {
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<p style="color: #7CFC00; font-weight: bold;">El amigo secreto sorteado es: ${amigoSorteado}</p>`;
 }
+
+function reiniciarJuego() {
+    amigos = []; // Vacía la lista de amigos
+    document.getElementById("listaAmigos").innerHTML = "";
+    document.getElementById("resultado").innerHTML = "";
+}
